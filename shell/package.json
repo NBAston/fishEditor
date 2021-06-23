@@ -1,0 +1,59 @@
+{
+  "name": "FISH_EDITOR",
+  "version": "4.1.5",
+  "description": "FISH EDITOR GROUP JSON DATA",
+  "main": "main.js",
+  "splashscreen": {
+    "imageFile": "/logo.ico"
+  },
+  "scripts": {
+    "s": "electron .",
+    "start": "electron .",
+    "pp2": "electron-packager ./ FISH_EDITOR --out ./OutApp --overwrite --icon=./logo.ico & npm run ase",
+    "pp": "electron-packager ./ FISH_EDITOR --out ./OutApp --overwrite --icon=./logo.ico --asar",
+    "dist1": "electron-builder --win --x64",
+    "ase": "ase.sh",
+    "packager2": "electron-packager . FISH_EDITOR --win --out ./OutApp2 --arch=x64 --app-version=1.0.0 --electron-version=9.1.2 --overwrite --icon=./logo.ico",
+    "allPlatform" : "electron-packager . --platform=all --arch=x64 --overwrite"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Amos",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "devtron": "^1.4.0",
+    "electron": "^9.1.2",
+    "electron-builder": "^22.8.0"
+  },
+  "build": {
+    "appId": "amos.fish.edit",
+    "copyright": "copyright (C) 2020 Amos ,Inc, All rights Fish Editor ",
+    "productName": "捕鱼编辑器",
+    "compression": "捕鱼编辑器",
+    "buildVersion": "3.0.1",
+    "asar": true,
+    "mac": {
+      "category": "amos.fish",
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "win": {
+      "icon": "logo.ico",
+      "target": "nsis"
+    }
+  },
+  "dependencies": {
+    "electron-context-menu": "^2.2.0",
+    "electron-packager": "^15.1.0",
+    "excel": "^1.0.1",
+    "excel-export": "^0.5.1",
+    "node-xlsx": "^0.15.0"
+  }
+}
