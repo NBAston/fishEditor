@@ -4,7 +4,7 @@
 
   * 准备资源工作
 
-  * 下载安装 TexturePacker （推荐）图集工具
+  * 安装 TexturePacker 3.x（推荐项目data下面的）图集工具
 
   * 创建项目文件夹(方便编辑器选择使用) 例如：在桌面建立 fishLine 文件夹
 
